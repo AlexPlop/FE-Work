@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <form action="#" method="post" class="my-form">
+       <p>Pizza Order</p> 
+       <label for="Name"> Your name:</label>  
+       <input type="text" id="Name" placeholder="Name" minlength="3" maxlength="10" required>
+       <br>
+       <br>
+       <label for="Name"> Your email:</label>
+       <input type="email" id="email" name="email" placeholder="Email" required>
+       <p>Toppings
+       <input type="radio" id="supreme" name="toppings" value="supreme">
+       <label for="supreme">Supreme</label>
+       <input type="radio" id="vegetarian" name="toppings" value="vegetarian">
+       <label for="vegetarian">Vegetarian</label>
+       <input type="radio" id="hawaian" name="toppings" value="hawaian">
+       <label for="hawaian">Hawaian</label>
+    </p>
+       <br>
+       <br>
+       <label for="Sauces">Sauces:</label>
+       <select id="sauces" name="sauces">
+        <option value="tomato">Tomato</option>
+        <option value="cocktail">Cocktail</option>
+        <option value="tzatziki">tzatziki</option> 
+    </select>
+<br>
+<br>
+
+    <p>Extras:
+        <input type="checkbox" id="Cheese" name="Cheese" value="Cheese">
+        <label for="Cheese">Cheese</label>
+        <input type="checkbox" id="Onions" name="Onions" value="Onions">
+        <label for="Onions">Onions</label>
+        <input type="checkbox" id="Olives" name="Olives" value="Olives">
+        <label for="Olives">Olives</label>
+    </p>
+    <p>Delivery instructions:</p>
+    <textarea name="delivery" rows="10" cols="30" required>
+
+    </textarea>
+    <br><br>
+<label for="Quantity">Quantity:</label>
+<input type="number" id="Quantity" name="Quantity" min="1" max="7" required>
+<br><br>
+<label for="DateOrder">Date Order</label>
+<input type="date" id="DateOrder" name="DateOrder">
+<br><br>
+    </p>
+    <input type="submit" value="Send order">
+    <input type="reset" value="Reset">
+
+    
+    
+
+    </form>
+    <!--Nu imi dau seama de ce nu functioneaza borderul
+    Nu am adaugat ultimul punct de la tema fiindca facusem acel nav bar inca de cand ma apucasem de tema HTML
+Sper sa nu fie vreo problema ca am adaugat cateva lucruri de CSS in tema de HTML, nu am facut-o fiindca mi s-ar fi parut prea simplu fiindca a trebuit sa stau ceva
+Pe tutoriale ca sa reusesc sa le implementez, pur si simplu am vrut eu sa arate mai frumos-->
+</body>
+</html>
