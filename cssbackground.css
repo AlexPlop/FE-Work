@@ -1,0 +1,18 @@
+.image {
+    position:relative;
+    left: 600px;
+    top: 60px;
+    background-clip:content-box;
+    display:flex;
+    padding:15px;
+    overflow: hidden;
+    width:100%;
+    height: auto;
+    margin:10px;
+    
+}
+img{
+    border:10px dotted red;
+    padding:20px;
+
+}
