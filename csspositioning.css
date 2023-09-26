@@ -1,0 +1,118 @@
+.square1 {
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: relative;
+    z-index: 1;
+}
+
+.square2 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    top: -50px;
+    left: 50px;
+    z-index: 2;
+}
+
+.square3 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: relative;
+    z-index: 3;
+    top: -100px;
+    left: 100px;
+}
+
+.parent {
+    width: 800px;
+    height: 400px;
+    background-color: rgb(187, 201, 184);
+    border: rgb(132, 94, 116) dotted 10px;
+    position: relative;
+}
+.parent h2 {
+    text-align: center;
+}
+
+/* 
+    DESCRIERE PROBLEMA - LIMBAJ NATURAL
+    Este un parinte care detine 3 copii.
+    Primul este in colt stanga sus  lipit de border
+    Al doilea este pe centru la fel lipit de border de jos 
+    Al 3lea este pe centru pe axa Y pe partea dreapta  si off set ( nu e lipit de border)*/
+
+/* 
+    PROBLEMA 1 - POZITIONAREA COPIILOR
+*/
+
+/* 
+
+    PROBLEMA 1-1- POZITIONEAZA TEXTULUI DIN PARINTE
+
+    fOLOSESC text-align:center  pentru .parent h2{;
+
+
+*/
+
+/* 
+
+    PROBLEMA 1-2- POZITIONEAZA PRIMUL COPIL
+
+    ITERATIA 1
+    Pt sus stanga position: relative;
+    Top: 0 ; left: 0; --> Pe .child_child1
+
+    merge pt tema dar nu e o solutie pentru ca daca se schimba continutul parintelui pozitia se va modifica
+
+    
+        Foloim position:absolute;
+        
+        va trebuie sa ii adaug position:relative ; Fiind ca punct de referinta parent--> Pentru pozitionare: o sa adaug top:0 si left:0: 
+
+*/
+
+.parent > *:not(h2) {
+    width: 300px;
+    height: 300px;
+}
+
+.child_child1 {
+    background-color: rgb(80, 142, 139);
+    border-radius: 10%;
+    border: rgb(132, 94, 116) dashed 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* DESCRIERE PROBLEMA LIMBAJ NATURAL
+Va trebui sa pozitionez child 2 pe centru Parintelui lipit de border, astfel incat sa poata fi pozitionat deasupra lui child 1 si child 3  */
+
+
+.child_child2 {
+    background-color: rgb(163, 145, 164);
+    border-radius: 10%;
+    border: rgb(132, 94, 116) dashed 5px;
+    top: 100px;
+    left: 250px;
+    position:absolute;
+    z-index: 2;
+}
+
+/* Child 3 trebuie sa il pozitionez in centrul dar sa fie sub layerul lui child 2  */
+
+.child_child3 {
+    background-color: rgb(168, 169, 124);
+    border-radius: 10%;
+    border: rgb(132, 94, 116) dashed 5px;
+    left: 450px;
+    top: -20px;
+    position: relative;
+    z-index: 1;
+} 
