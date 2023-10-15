@@ -1,0 +1,125 @@
+.parent{
+    border:2px solid black;
+    width: 800px;
+    height: 700px;
+    display:grid;
+    grid-template-columns: 50px auto auto ;
+background-color: rgb(46,46,46);
+color:white;
+
+    
+}
+
+
+.first-line {
+    display:grid;
+   grid-column:1;
+   align-items: end;
+   justify-content:start;
+   row-gap:0px;
+   width: 50px;
+   grid-template-rows: repeat(6,1fr);
+   gap:10px;
+
+
+}
+
+
+
+.avatar {
+    vertical-align: middle;
+    border-radius: 50%;
+    display: grid;
+    vertical-align: middle;
+    width:40px;
+}
+.menu,
+.file,
+.gallery,
+.settings,
+.powerbutton {
+    display: grid;
+    vertical-align: middle;
+    width: 40px;
+   
+
+}
+.menu {
+    grid-row: 1;
+    align-self:start;
+}
+
+.file,
+.gallery,
+.settings,
+.powerbutton,
+.avatar {
+   grid-row:span 6;
+   grid-column:1;
+   align-items: end;
+   justify-self: center;
+   width: 40px;
+   
+
+}
+
+.second-line {
+    overflow: auto;
+}
+
+.icons-second-line {
+    width: 50px;
+
+}
+
+.recently-added,
+.Second-box-second-column,
+.A,
+.B,
+.C {
+    display: grid;
+    grid-template-columns: 60px auto;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+.icons-second-line {
+    grid-column: 1;
+    grid-row: span 3;
+    justify-content: start;
+}
+
+.recently-added-paragraph,
+p {
+    grid-column: 2;
+    grid-row: span 3;
+    justify-content: start;
+    align-items: start;
+    display: grid;
+}
+
+
+.productivity,
+.explore,
+.anotherclass {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5px;
+}
+
+.productivity-images {
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    margin-right: -45px;
+    
+}
