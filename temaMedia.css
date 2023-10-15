@@ -1,0 +1,94 @@
+body {
+    height: 80vh;
+}
+
+body {
+    margin: 0;
+    display:grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 8% auto 10%;
+    grid-template-areas: 
+    "header header header"
+    "aside1 main aside2"
+    "footer footer footer"
+}
+
+
+header {
+    grid-area: header;
+    background-color: rgb(233,107,82);
+}
+
+aside1{
+    grid-area: aside1;
+    background-color: rgb(248,215,73);
+}
+
+main {
+    grid-area: main;
+    background-color:rgb(85,190,250) ;
+}
+
+aside2{
+    grid-area: aside2;
+    background-color: rgb(230,114,178);
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(168,235,153);
+}
+
+h2 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width:720px) {
+
+body {
+    margin: 0;
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
+    "header"
+    "main"
+    "aside1"
+    "aside2"
+    "footer";
+}
+header {
+    grid-area: header;
+    background-color: rgb(233,107,82);
+}
+
+aside1{
+    grid-area: aside1;
+    background-color: rgb(248,215,73);
+}
+
+main {
+    grid-area: main;
+    background-color:rgb(85,190,250) ;
+}
+
+aside2{
+    grid-area: aside2;
+    background-color: rgb(230,114,178);
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(168,235,153);
+}
+
+h2 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+}
