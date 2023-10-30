@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Impozit auto</title>
+  </head>
+  <body>
+    <script>
+      // 1st problem: Fac rost de input de la utilizator prin prompt
+      // input - output
+      // prompt - functie
+
+      let nrCmc = prompt(" Introdu valoare centimetri cubi pentru autoturism");
+
+      // 2nd: Formula vietii nr cmc : 200 * valoarea referinta = impozit pe an
+
+      // 1.601 cm3 - 2.000 cm3 => valoare de referinta 22
+      // Valoarea venita din prompt va fi comparata cu parametrii. In functie de parametrii existenti va fi decisa valoarea de referinta.
+
+      let valoareReferinta;
+
+      if (nrCmc >= 1601 && nrCmc <= 2000) {
+        valoareReferinta = 22;
+      }
+
+      if (nrCmc >= 2001 && nrCmc <= 2600) {
+        valoareReferinta = 85;
+      }
+
+      if (nrCmc >= 2601 && nrCmc <= 3000) {
+        valoareReferinta = 171;
+      }
+
+      if (nrCmc >= 3001) {
+        valoareReferinta = 345;
+      }
+
+      const impozitAnual = (nrCmc / 200) * valoareReferinta;
+
+      // 3rd: Output adica alarma
+      alert(`Impozitul anual pentru autoturismul dvs. este ${impozitAnual}`);
+    </script>
+  </body>
+</html>
