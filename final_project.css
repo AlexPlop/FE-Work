@@ -1,0 +1,42 @@
+header {
+    width: 1440px;
+    height: 820px;
+    flex-shrink: 0;
+    background:rgba(23, 25, 43, 1);
+    position: absolute;
+    overflow: hidden;
+}
+.dine_logo {
+    top: 65px;
+    left: 167px;
+    position: relative;
+    z-index: 2;
+
+}
+.pasta_photo {
+    width: 1611px;
+    height: 1074px;
+    flex-shrink: 0;
+    position: relative;
+    top:-50px;
+    left: 545px;
+    right: -2056px;
+    bottom: -974px;
+    z-index: 2;
+}
+
+ .exquisite {
+    color:#FFF;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 80px;
+    letter-spacing: -1px;
+    position: absolute;
+    top: 258px;
+    left:165px;
+    z-index: 1;
+    width: 506px;
+    height: 160px;
+    
+}
