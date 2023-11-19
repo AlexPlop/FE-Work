@@ -272,16 +272,142 @@ height: 90px;
 
 }
 
-. section3_textandpictures pictures{
+.section3_textandpictures {
+display: flex;
+flex-direction: row;
+top: 255px;
+left:735px;
+width: 128px;
+height: 96px;
+gap: 20px;
+top: 255px;
+left: 735px;
+position: relative;
+    
+}
+
+.flexpictures {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     gap: 10px;
+    margin-right: 10px;
+    width: 145px;
+}
+
+.text{
+    margin-left: 10px;
+}
+
+
+.text h1{
+color: #FFF;
+font-family: 'League Spartan', sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 120% */
+letter-spacing: -0.25px;
+width: 350px;
+height: 24px;
+}
+
+.text p{
+color: #FFF;
+font-family: 'League Spartan', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px;
+width: 350px;
+height: 78px;
+}
+
+ /* SECTION4 */
+ .textandimg img{
+    width: 540px;
+    height: 809.191px;
     flex-shrink: 0;
     position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 1440px;
-    height: 761px;
+    top: 3152px;
+    left: 165px;
+    box-shadow: 0px 50px 40px -30px  grey;
+
+ }
+
+ .textandimg h1 {
+    color: #242B37;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 100% */
+    letter-spacing: -0.5px;
+    position: absolute;
+    top: 3222px;
+    left: 830px;
+    width: 445px;
+    height: 48px;
+ }
+
+ .textandimg p {
+    color: #242B37;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    width: 445px;
+    height: 90px;
+    top: 3289px;
+    left: 830px;
+    position: absolute;
+    padding-top: 19px;
+ }
+
+ .book_a_table2 {
+padding-top: 20px;
+top:150px;
+left:-1px;
+width: 800px;
+height: 64px;
+flex-shrink: 0;
+display: flex;
+position: absolute;
+z-index: 3;
+
+
 }
+ 
+.book_a_table2 p{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 94.118% */
+    letter-spacing: 2.5px;
+    padding: 25px 55px 25px 55px;
+    border:1px solid #FFF;
+    flex-shrink: 0;
+    width: 170px;
+    height: 16px;
+    position: absolute;
+    background: #111;
+    flex-direction: row;
+    }
+
+    .special_events {
+    
+        flex-shrink: 0;
+        display: flex;
+        position: absolute;
+        top: 300px;
+        left: 1px;
+        flex-direction: column;
+    }
+
+ 
