@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'League Spartan';
+    src: url('path-to-your-font/LeagueSpartan-Regular.woff2') format('woff2'),
+         url('path-to-your-font/LeagueSpartan-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+   
+  body {
+font-family: 'League Spartan', sans-serif;
+background-color: #fff;
+display: inline-flex;
+padding: 0px 165px 160px 0px;
+align-items: center;
+  }
+
+  .geometricform {
+    width: 895px;
+    height:320px;
+    flex-shrink: 0;
+    border-radius: 100px; 0px 0px 0px;
+    opacity: 0.0774;
+    background: #5C6779;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+
+  
