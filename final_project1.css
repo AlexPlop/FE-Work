@@ -21,10 +21,10 @@ align-items: center;
   }
 
   .geometricform {
-    width: 895px;
+    width: 500px;
     height:320px;
     flex-shrink: 0;
-    border-radius: 100px; 0px 0px 0px;
+    border-radius: 0px 100px 0px 0px;
     opacity: 0.0774;
     background: #5C6779;
     position: absolute;
@@ -32,4 +32,103 @@ align-items: center;
     top: 0px;
   }
 
+  img {
+    clip-path: polygon(50% 20%, 100% 20%, 100% 100%, 50% 100%);
+    position: absolute;
+    top: 20px;
+    left:-340px;
+    width: 1000px;
+    height: 700px;
+    margin: 0px 0px 0px 0px; 
+    padding: 0px 0px 0px 0px;  
+  }
+
+  .special_events_child h1 {
+width: 445px;
+height: 48px;
+color: #242B37;
+font-family: League Spartan;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px; /* 100% */
+letter-spacing: -0.5px;
+position: absolute;
+top: 200px;
+left: 800px;
+}
+
+.special_events_child p {
+width: 445px;
+height: 120px;
+color: #242B37;
+font-family: League Spartan;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px;
+position: absolute;
+top: 300px;
+left: 800px;
+}
+
+.book_a_table4 {
+
+top:150px;
+left:-1px;
+width: 245px;
+height: 64px;
+flex-shrink: 0;
+display: flex;
+position: absolute;
+z-index: 3;
+}
+
+.book_a_table4 p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px; /* 94.118% */
+  letter-spacing: 2.5px;
+  padding: 25px 55px 23px 54px;
+  border: 1px solid #FFF;
+  flex-shrink: 0;
+  width: 245px;
+  height: 64px;
+  position: absolute;
+  background: #111;
+  flex-direction: row;
+  text-align: center;
+  white-space: nowrap; 
+}
+
+.special_events_child2{
+color: #4C4C4C;
+font-family: League Spartan;
+font-size: 17px;
+font-style: normal;
+font-weight: 600;
+line-height: 28px; /* 164.706% */
+letter-spacing: 2.5px;
+}
+
+ .special_events_child2 .position_family_gathering {
+  top: 560px;
+  opacity: 0.5;
   
+}
+
+.special_events_child2 .position_special_events {
+  top: 600px;
+  
+}
+
+.special_events_child2 .position_social_events {
+  top: 640px;
+  opacity: 0.5;
+}
