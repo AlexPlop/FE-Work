@@ -125,6 +125,7 @@ letter-spacing: 2.5px;
 
 .special_events_child2 .position_special_events {
   top: 600px;
+  opacity: 0.5;
   
 }
 
@@ -132,3 +133,16 @@ letter-spacing: 2.5px;
   top: 640px;
   opacity: 0.5;
 }
+
+.special_events_child2 .position_family_gathering:hover {
+  opacity: 1;
+}
+
+.special_events_child2 .position_special_events:hover {
+  opacity: 1;
+}
+
+.special_events_child2 .position_social_events:hover {
+  opacity: 1;
+}
+  
