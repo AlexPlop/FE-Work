@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>reservation</title>
+    <link rel="stylesheet" href="reservation.css" />
+  </head>
+  <body>
+    <header>
+      <img src="dine.png" alt="dine" />
+      <h1>Reservations</h1>
+      <p>
+        We can’t wait to host you. If you have any special requirements please
+        feel free to call on the phone number below. We’ll be happy to
+        accommodate you.
+      </p>
+    </header>
+    <form>
+      <label for="Name"></label>
+      <input type="text" id="Name" placeholder="Name" required />
+
+      <label for="Email"></label>
+      <input type="email" id="Email" placeholder="Email" required />
+
+      <label for="pick a date">Pick a date</label>
+      <input type="date" id="pick a date" required />
+
+      <label for="pick a time">Pick a time</label>
+      <input type="time" id="pick a time" required />
+
+      <div class="party-size-container">
+        <button class="party-size-btn" onclick="decreasePartySize()">-</button>
+        <span class="party-size-display" id="partySizeDisplay">1</span>
+        <button class="party-size-btn" onclick="increasePartySize()">+</button>
+      </div>
+      <button type="submit">Make a reservation</button>
+    </form>
+  </body>
+</html>
